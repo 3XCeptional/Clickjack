@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Clickjack test page</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <p>Website is vulnerable to clickjacking!</p>
+    <iframe src="https://explore.redoxengine.com/login" width="700" height="500"></iframe>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DXQ2CX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <div class="row justify-content-center">
+        <div class="col-sm-3">
+            <a class="btn btn-block btn-social btn-google font-weight-bold" href="/auth/google">
+                <span class="fa fa-google"></span>
+                Login with Google
+            </a>
+            <a class="btn btn-block btn-social btn-linkedin font-weight-bold" href="/auth/linkedin">
+                <span class="fa fa-linkedin"></span>
+                Login with LinkedIn
+            </a>
+            <a class="btn btn-block btn-social btn-microsoft font-weight-bold" href="/auth/azure">
+                <span class="fa fa-windows"></span>
+                Login with Microsoft
+            </a>
+            <a class="btn btn-block btn-social btn-github font-weight-bold" href="/auth/github">
+                <span class="fa fa-github"></span>
+                Login with Github
+            </a>
+            <!-- <a class="btn btn-block btn-social btn-facebook font-weight-bold" href="/auth/facebook">
+            <span class="fa fa-facebook"></span>
+            Login with Facebook
+          </a> -->
+            <br>
+
+        </div>
+    </div>
+</body>
+
+</html>
